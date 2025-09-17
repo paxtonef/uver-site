@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "clean": "bash rebuild.sh"
   },
   "dependencies": {
     "react": "19.1.0",
@@ -25,3 +26,4 @@
     "@eslint/eslintrc": "^3"
   }
 }
+
