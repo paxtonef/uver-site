@@ -1,0 +1,19 @@
+# Protect all pages
+/pages/*          @paxtonef
+/pages/**/*       @paxtonef
+/src/pages/*      @paxtonef
+/src/pages/**/*   @paxtonef
+
+# Protect critical configs
+/package.json      @paxtonef
+/package-lock.json @paxtonef
+/tsconfig.json     @paxtonef
+/next.config.js    @paxtonef
+/next.config.ts    @paxtonef
+/postcss.config.mjs @paxtonef
+/eslint.config.mjs  @paxtonef
+
+# Protect root project files
+/README.md         @paxtonef
+/rebuild.sh        @paxtonef
+
