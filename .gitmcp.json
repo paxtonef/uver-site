@@ -1,0 +1,10 @@
+{
+  "name": "uver-site",
+  "repo": "github.com/paxtonef/uver-site",
+  "qualityGate": ".ai/quality-gate.yml",
+  "rules": {
+    "overwrite_existing": false,
+    "extend_layout": true
+  }
+}
+

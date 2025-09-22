@@ -1,0 +1,16 @@
+rules:
+  - path: "pages/*"
+    protect: true
+  - path: "pages/**/*"
+    protect: true
+
+  - path: "components/*"
+    protect: false
+  - path: "components/**/*"
+    protect: false
+
+  - path: "lib/*"
+    protect: false
+  - path: "lib/**/*"
+    protect: false
+
