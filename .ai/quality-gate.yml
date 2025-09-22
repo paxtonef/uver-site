@@ -1,14 +1,23 @@
 rules:
+  # Protect classic Next.js pages
   - path: "pages/*"
     protect: true
   - path: "pages/**/*"
     protect: true
 
+  # Protect pages inside src/ (App Router style)
+  - path: "src/pages/*"
+    protect: true
+  - path: "src/pages/**/*"
+    protect: true
+
+  # Allow AI coder to work in components/
   - path: "components/*"
     protect: false
   - path: "components/**/*"
     protect: false
 
+  # Allow AI coder to work in lib/
   - path: "lib/*"
     protect: false
   - path: "lib/**/*"
