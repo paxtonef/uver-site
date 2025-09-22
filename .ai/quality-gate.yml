@@ -5,19 +5,40 @@ rules:
   - path: "pages/**/*"
     protect: true
 
-  # Protect pages inside src/ (App Router style)
+  # Protect pages in src/ (modern Next.js structure)
   - path: "src/pages/*"
     protect: true
   - path: "src/pages/**/*"
     protect: true
 
-  # Allow AI coder to work in components/
+  # Protect critical configs
+  - path: "package.json"
+    protect: true
+  - path: "package-lock.json"
+    protect: true
+  - path: "tsconfig.json"
+    protect: true
+  - path: "next.config.js"
+    protect: true
+  - path: "next.config.ts"
+    protect: true
+  - path: "postcss.config.mjs"
+    protect: true
+  - path: "eslint.config.mjs"
+    protect: true
+
+  # Protect misc project files
+  - path: "README.md"
+    protect: true
+  - path: "rebuild.sh"
+    protect: true
+
+  # ✅ Open zones where AI coder can safely work
   - path: "components/*"
     protect: false
   - path: "components/**/*"
     protect: false
 
-  # Allow AI coder to work in lib/
   - path: "lib/*"
     protect: false
   - path: "lib/**/*"
